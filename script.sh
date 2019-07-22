@@ -1,4 +1,4 @@
 #!/bin/bash
-ls
+cd script/
 mkdir hola
 touch adios
