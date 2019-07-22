@@ -4,4 +4,5 @@ RUN apt-get update
 RUN mkdir script
 COPY script.sh /script/script.sh
 RUN chmod -R 777 /script/*
-CMD ./script/script.sh
+RUN echo exit 0 > /usr/sbin/policy-rc-d
+CMD [/script/script.sh]
